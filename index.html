@@ -5,8 +5,8 @@
 <h1><a href="https://www.oligo.security/blog/0-0-0-0-day-exploiting-localhost-apis-from-the-browser">0.0.0.0 day vulnerabilty</a> test</h1>
 
 <p>
-Run a local web server bound to 0.0.0.0:8080 while loading this page.
-2 HTTP requests are launched to http://127.0.0.1:8080?localhost and http://0.0.0.0:8080?zero.
+Run a local web server on port 8080 before loading this page. E.g. python -m http.server 8080.
+When this page is loaded, 2 HTTP requests are launched, one to http://127.0.0.1:8080?localhost and another one to http://0.0.0.0:8080?zero.
 Check if any of the requests went through in the web server logs, to see if the web browser is vulnerable to the 0.0.0.0 day vulnerability.
 </p>
 
