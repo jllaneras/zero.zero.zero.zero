@@ -4,13 +4,13 @@
 
 <h1>0.0.0.0 day vulnerabilty test</h1>
 
+<p>
+Run a webserver bound to 0.0.0.0:8080 while loading this page. The 2 images below launch requests to http://127.0.0.1:8080?localhost and http://0.0.0.0:8080?zero. Check your webserver logs to see if the request went through to see if the browser is vulnerable to 0.0.0.0 day vulnerability.
+</p>
+
 <img src="http://127.0.0.1:8080?localhost" />
 <img src="http://0.0.0.0:8080?zero" />
 
-
-<p>
-Run a webserver bound to 0.0.0.0:8080 while loading the page. 2 requests are launched against http://127.0.0.1:8080?localhost and http://0.0.0.0:8080?zero.
-</p>
 
 </body>
 </html> 
