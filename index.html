@@ -1,17 +1,17 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
 <h1><a href="https://www.oligo.security/blog/0-0-0-0-day-exploiting-localhost-apis-from-the-browser">0.0.0.0 day vulnerabilty</a> test</h1>
 
 <p>
-Run a web server bound to 0.0.0.0:8080 while loading this page.
-The 2 images below launch requests to http://127.0.0.1:8080?localhost and http://0.0.0.0:8080?zero.
+Run a local web server bound to 0.0.0.0:8080 while loading this page.
+2 HTTP requests are launched to http://127.0.0.1:8080?localhost and http://0.0.0.0:8080?zero.
 Check if any of the requests went through in the web server logs, to see if the web browser is vulnerable to the 0.0.0.0 day vulnerability.
 </p>
 
-<img src="http://127.0.0.1:8080?localhost" />
-<img src="http://0.0.0.0:8080?zero" />
+<script src="http://127.0.0.1:8080?localhost"></script>
+<script src="http://0.0.0.0:8080?zero"></script>
 
 </body>
 </html> 
